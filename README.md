@@ -12,7 +12,7 @@ Hi there, actually i´m studying IT Engineering at College. I love learning abou
 [![PFC](https://github.com/isifire/isifire/blob/main/pfc.jpg)](https://www.linkedin.com/in/isidro-ben%C3%ADtez-zapico-1a0412188/details/projects/1703805726165/single-media-viewer/?profileId=ACoAACwzD4gBCkqgN3rfRgv431dVPmH_nKNpQv8)
 
 ### Facts
-- 🔭 I’m currently working on CUDA
+- 🔭 Right now i wish to learn about Reverse Engineering
 - 🌱 I’m currently learning Data Structures
 - 😄 Pronouns: He/Him
 - ⚡ Fun fact: HaloScript is based on Lisp
