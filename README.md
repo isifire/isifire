@@ -3,8 +3,11 @@ Hi there, actually i´m studying IT Engineering at College. I love learning abou
 
 ## Past Projects
 - Ported The Flood The Forgotten Exile from Halo Custom Edition to Halo The Master Chief Collection: https://steamcommunity.com/sharedfiles/filedetails/?id=2938702672
-- 
 
+- I made a 3D Printing Server & Webcam Server + VPN on a Raspberry Pi for my ASIR Final Project  
+
+
+### Facts
 - 🔭 I’m currently working on CUDA
 - 🌱 I’m currently learning Data Structures
 - 😄 Pronouns: He/Him
