@@ -9,7 +9,7 @@ Hi there, actually i´m studying IT Engineering at College. I love learning abou
 
 - I made a 3D Printing Server & Webcam Server + VPN on a Raspberry Pi for my ASIR Final Project
   
-[![PFC](https://github.com/isifire/isifire/blob/main/pfc.jpeg)](https://steamcommunity.com/sharedfiles/filedetails/?id=2938702672)
+[![PFC](https://github.com/isifire/isifire/blob/main/pfc.jpg)](https://steamcommunity.com/sharedfiles/filedetails/?id=2938702672)
 
 ### Facts
 - 🔭 I’m currently working on CUDA
