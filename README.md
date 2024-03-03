@@ -13,7 +13,7 @@ Hi there, actually i´m studying IT Engineering at College. I love learning abou
 
 ### Facts
 - 🔭 Right now i wish to learn about Reverse Engineering
-- 🌱 I’m currently learning Data Structures
+- 🌱 I’m currently learning Distributed Computing
 - 😄 Pronouns: He/Him
 - ⚡ Fun fact: HaloScript is based on Lisp
 
