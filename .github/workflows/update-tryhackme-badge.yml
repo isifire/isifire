@@ -22,6 +22,7 @@ jobs:
         uses: DhanushNehru/tryhackme-badge-action-workflow@v1.0
         with:
           image_path: './assets/tryhackme-badge.png'
-          username: 'isi4fire'      # Pon tu usuario TryHackMe aquí
-          user_id: '5177834'            # Pon tu user ID TryHackMe aquí (número)
+          username: 'isi4fire'
+          user_id: '5177834'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
