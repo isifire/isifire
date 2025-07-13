@@ -2,8 +2,8 @@ name: Update TryHackMe Badge
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Ejecuta cada día a medianoche
-  workflow_dispatch:     # Permite ejecución manual
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
   update-badge:
@@ -11,18 +11,22 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Configure Git Identity
         run: |
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
 
-      - name: Fetch TryHackMe Badge
-        uses: DhanushNehru/tryhackme-badge-action-workflow@v1.0
-        with:
-          image_path: './assets/tryhackme-badge.png'
-          username: 'isi4fire'
-          user_id: '5177834'
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Download TryHackMe Badge
+        run: |
+          mkdir -p assets
+          curl -sL "https://tryhackme-badges.s3.amazonaws.com/isi4fire.png" -o ./assets/tryhackme-badge.png
 
+      - name: Commit and push badge
+        run: |
+          git add ./assets/tryhackme-badge.png
+          git commit -m "Actualizar badge TryHackMe automáticamente" || echo "No hay cambios para commitear"
+          git push
