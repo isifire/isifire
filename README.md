@@ -3,8 +3,7 @@ Hi there, i´m IT Engineer. I love learning about Cybersecurity, Game Developmen
 
 ## 🛡️ Progreso en Ciberseguridad
 
-![TryHackMe Badge](tryhackme-badge.svg)
-
+![tryhackme stats](https://raw.githubusercontent.com/isi4fire/isi4fire/master/assets/thm_propic.png)
 
 Explorando laboratorios prácticos en hacking ético, redes, y ofensiva/defensiva en TryHackMe.
 
