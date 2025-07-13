@@ -1,5 +1,11 @@
 # Isidro Benítez 🔥
-Hi there, actually i´m studying IT Engineering at College. I love learning about Cybersecurity, Game Development, Networks and System Administration, i also code in my free time.
+Hi there, i´m IT Engineer. I love learning about Cybersecurity, Game Development, Networks and System Administration, i also code in my free time.
+
+## 🛡️ Progreso en Ciberseguridad
+
+[![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/isi4fire.png)](https://tryhackme.com/p/isi4fire)
+
+Explorando laboratorios prácticos en hacking ético, redes, y ofensiva/defensiva en TryHackMe.
 
 ## Past Projects
 - I Collaborated to Port The Flood: The Forgotten Exile Mod from the videogame Halo Custom Edition to Halo The Master Chief Collection:
