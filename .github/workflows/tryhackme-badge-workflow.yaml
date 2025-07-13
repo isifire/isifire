@@ -11,19 +11,19 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Crear carpeta assets si no existe
-        run: mkdir -p assets
+      # Crear carpeta y archivo vacío si no existen
+      - name: Prepare assets folder and placeholder image
+        run: |
+          mkdir -p ./assets
+          if [ ! -f ./assets/thm_propic.png ]; then
+            touch ./assets/thm_propic.png
+          fi
 
       - uses: p4p1/tryhackme-badge-workflow@main
         with:
-          username: isi4fire
-          image_path: ./assets/thm_propic.png
+          username: "<TU_USERNAME>"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Commit y push
-        run: |
-          git config user.name "thm-p4p1-bot"
-          git config user.email "p4p1@thm.bot"
-          git add assets/thm_propic.png
-          git commit -m "Updated THM profile badge"
-          git push
+          image_path: ./assets/thm_propic.png
+          committer_username: thm-p4p1-bot
+          committer_email: p4p1@thm.bot
+          commit_message: Updated THM profile badge
