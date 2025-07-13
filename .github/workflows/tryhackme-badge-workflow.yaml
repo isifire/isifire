@@ -2,7 +2,7 @@ name: TryHackMe Update Badge
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # ejecuta cada día a medianoche UTC
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 jobs:
@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
+      - name: Crear carpeta assets si no existe
+        run: mkdir -p assets
 
       - uses: p4p1/tryhackme-badge-workflow@main
         with:
