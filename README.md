@@ -1,14 +1,23 @@
 # Isidro Benítez 🔥
-Hi there, i´m IT Engineer. I love learning about Cybersecurity, Game Development, Networks and System Administration, i also code in my free time.
-
-## 🛡️ Progreso en Ciberseguridad
-
-![tryhackme badge](./assets/tryhackme-badge.png)
+👨‍💻 **IT Engineer** with a strong interest in **Cybersecurity**, **Game Development**, **Networks**, and **System Administration**. I enjoy coding in my free time and constantly seek to expand my skill set.
 
 
-Explorando laboratorios prácticos en hacking ético, redes, y ofensiva/defensiva en TryHackMe.
+## 🛡️ Cybersecurity Progress
 
-## Past Projects
+![TryHackMe badge](./assets/tryhackme-badge.png)
+
+I’m actively exploring **offensive and defensive labs** on [TryHackMe](https://tryhackme.com/p/isi4fire), improving my skills in areas like penetration testing, reverse engineering, and Linux security.
+
+
+## 🔎 About Me
+
+- 🧑‍🎓 Graduated in IT Engineering
+- 💼 Currently seeking remote opportunities in **Cybersecurity**
+- 📍 Based in Asturias, Spain
+- ⚡ Fun fact: **HaloScript** is based on Lisp
+- 💬 Pronouns: He/Him
+
+## 🚀 Past Projects
 - I Collaborated to Port The Flood: The Forgotten Exile Mod from the videogame Halo Custom Edition to Halo The Master Chief Collection:
   
 [![STKFT](https://github.com/isifire/isifire/blob/main/stkft.jpeg)](https://steamcommunity.com/sharedfiles/filedetails/?id=2938702672)
@@ -20,7 +29,7 @@ Explorando laboratorios prácticos en hacking ético, redes, y ofensiva/defensiv
 
 ### Facts
 - 🔭 Right now i wish to learn about Reverse Engineering
-- 🌱 I’m currently learning Distributed Computing
+- 🌱 I’m currently learning Pentesting
 - 😄 Pronouns: He/Him
 - ⚡ Fun fact: HaloScript is based on Lisp
 
