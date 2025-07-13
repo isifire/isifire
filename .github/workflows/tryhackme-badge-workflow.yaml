@@ -2,26 +2,18 @@ name: TryHackMe Update Badge
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Ejecutar cada día a medianoche UTC
-  workflow_dispatch:     # Permite disparar manualmente
-
+    # Make it run every 24 hour
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 jobs:
   tryhackme-badge-update:
-    name: Actualizar badge TryHackMe
+    name: Update this repo's tryhackme badge with the latest tryhackme image badge
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Generar badge TryHackMe
-        uses: devlights/tryhackme-badge-workflow@v1
+      - uses: actions/checkout@v2
+      - uses: p4p1/tryhackme-badge-workflow@main
         with:
-          username: isi4fire
-
-      - name: Commit y push del badge
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add tryhackme-badge.svg
-          git commit -m "Actualizar badge TryHackMe"
-          git push
+          # Replace with your tryhackme username
+          username: "<USERNAME>"
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}} # Do not paste your github token here - this is a placeholder
+                                                  # and will pull your github token automatically
