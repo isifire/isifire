@@ -1,29 +1,27 @@
-name: TryHackMe Update Badge
+name: Update TryHackMe Badge
 
 on:
   schedule:
-    - cron: '0 0 * * *'
-  workflow_dispatch:
+    - cron: '0 0 * * *'  # Ejecuta cada día a medianoche
+  workflow_dispatch:     # Permite ejecución manual
 
 jobs:
-  tryhackme-badge-update:
-    runs-on: ubuntu-latest
+  update-badge:
+    runs-on: ubuntu-22.04
+
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-      # Crear carpeta y archivo vacío si no existen
-      - name: Prepare assets folder and placeholder image
+      - name: Configure Git Identity
         run: |
-          mkdir -p ./assets
-          if [ ! -f ./assets/thm_propic.png ]; then
-            touch ./assets/thm_propic.png
-          fi
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
 
-      - uses: p4p1/tryhackme-badge-workflow@main
+      - name: Fetch TryHackMe Badge
+        uses: DhanushNehru/tryhackme-badge-action-workflow@v1.0
         with:
-          username: "<TU_USERNAME>"
+          image_path: './assets/tryhackme-badge.png'
+          username: 'TU_USUARIO_THM'      # Pon tu usuario TryHackMe aquí
+          user_id: 'TU_ID_THM'            # Pon tu user ID TryHackMe aquí (número)
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          image_path: ./assets/thm_propic.png
-          committer_username: thm-p4p1-bot
-          committer_email: p4p1@thm.bot
-          commit_message: Updated THM profile badge
