@@ -26,8 +26,8 @@ jobs:
       - name: Download TryHackMe Badge from API
         run: |
           mkdir -p assets
-          badge_url=$(curl -s "https://tryhackme.com/api/v2/badges/public-profile?userPublicId=5177834" | jq -r '.badge_image_url')
-          curl -sL "$badge_url" -o ./assets/tryhackme-badge.png
+          curl -sL "https://tryhackme.com/badge/image/5177834" -o ./assets/tryhackme-badge.png
+
 
       - name: Commit and push badge
         run: |
