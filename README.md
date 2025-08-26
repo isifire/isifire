@@ -4,7 +4,7 @@
 
 ## 🛡️ Cybersecurity Progress
 
-![TryHackMe badge](./assets/tryhackme-badge.png)
+![TryHackMe badge](https://tryhackme-badges.s3.amazonaws.com/isi4fire.png)
 
 I’m actively exploring **offensive and defensive labs** on [TryHackMe](https://tryhackme.com/p/isi4fire), improving my skills in areas like penetration testing, reverse engineering, and Linux security.
 
